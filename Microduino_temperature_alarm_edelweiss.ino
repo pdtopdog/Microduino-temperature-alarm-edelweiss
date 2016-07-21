@@ -50,7 +50,7 @@ void loop() {
   u8g.print(" ");
   u8g.print("%"); 
   
- if(temp>30)
+ if(temp>Warning_Temperature)
   {
   u8g.drawStr( 0,63, "Open air conditioning");   
   }
