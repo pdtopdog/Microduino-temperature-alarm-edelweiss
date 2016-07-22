@@ -20,8 +20,8 @@ int noteDurations[] = {
 
 void setup() {
   Serial.begin(115200);
-  while(!Serial){;
-  }
+  /*while(!Serial){;
+  }*/
   pinMode(buzzer_pin, OUTPUT);    
 }
 
@@ -31,8 +31,8 @@ void loop() {
    
   float temp = am2321.temperature/10.0;  
   float humidity = am2321.humidity/10.0;
-  Serial.println(temp);
-  Serial.println(humidity);
+ // Serial.println(temp);
+ //Serial.println(humidity);
  
   
   u8g.firstPage();  
@@ -70,7 +70,7 @@ void loop() {
   {
   noTone(buzzer_pin);
   }
-   delay(500);  
+   delay(3000);  
 }
 
 void song_play()
