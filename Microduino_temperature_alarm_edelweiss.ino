@@ -75,7 +75,7 @@ void loop() {
 
 void song_play()
 {
-  for (int thisNote = 0; thisNote < 25; thisNote++)
+  for (int thisNote = 0; thisNote < 36; thisNote++)
   {
     int noteDuration = 1000 / noteDurations[thisNote];
     tone(buzzer_pin, song[thisNote], noteDuration);
